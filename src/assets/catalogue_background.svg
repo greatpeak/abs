@@ -1,0 +1,35 @@
+<svg width="1279" height="220" viewBox="0 0 1279 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_7467_43515)">
+<rect width="1279" height="220" rx="12" fill="url(#paint0_linear_7467_43515)"/>
+<g opacity="0.6" filter="url(#filter0_f_7467_43515)">
+<circle cx="1156" cy="150" r="117" fill="white"/>
+</g>
+<rect opacity="0.3" x="795" y="48" width="75" height="75" fill="white"/>
+<rect opacity="0.4" x="820" y="66" width="50" height="50" fill="white"/>
+<rect opacity="0.4" x="627" y="124" width="50" height="50" fill="white"/>
+<rect opacity="0.6" x="832" y="85" width="50" height="50" fill="white"/>
+<rect opacity="0.6" x="627" y="150" width="50" height="50" fill="white"/>
+<rect opacity="0.7" x="848" y="98" width="50" height="50" fill="white"/>
+<rect opacity="0.7" x="627" y="176" width="50" height="50" fill="white"/>
+<rect opacity="0.8" x="870" y="123" width="50" height="50" fill="white"/>
+<rect opacity="0.8" x="663" y="124" width="50" height="50" fill="white"/>
+<path opacity="0.8" d="M360.5 -42L454.464 120.75H266.536L360.5 -42Z" fill="white"/>
+<path opacity="0.4" d="M267.5 -42L361.464 120.75H173.536L267.5 -42Z" fill="white"/>
+<path opacity="0.6" d="M469.5 -42L563.464 120.75H375.536L469.5 -42Z" fill="white"/>
+<circle cx="1156" cy="147" r="99" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_7467_43515" x="1021" y="15" width="270" height="270" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="9" result="effect1_foregroundBlur_7467_43515"/>
+</filter>
+<linearGradient id="paint0_linear_7467_43515" x1="0" y1="110" x2="1995.92" y2="110" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E5E5FD"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_7467_43515">
+<rect width="1279" height="220" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

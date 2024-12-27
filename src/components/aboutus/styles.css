@@ -1,0 +1,41 @@
+.what-we-serve-bg {
+  background-image: url("../../assets/what-we-serve-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38rem;
+}
+@media only screen and (min-width: 768px) {
+  .what-we-serve-bg {
+    background-image: url("../../assets/what-we-serve-bg-desktop.svg");
+    height: 45rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .what-we-serve-bg {
+    background-image: url("../../assets/what-we-serve-bg-desktop.svg");
+    height: 34rem;
+  }
+}
+.work-with-us-bg {
+  background-image: url("../../assets/work-with-us-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: max-content;
+}
+
+@media only screen and (min-width: 1024px) {
+  .work-with-us-bg {
+    width: 29rem;
+    /* padding-left: 6rem; */
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .work-with-us-bg {
+    width: 33rem;
+    /* padding-left: 6rem; */
+  }
+}
+
+.custom-border-radius {
+  border-radius: 0.3125rem 6.25rem 0.3125rem 3.125rem;
+}
