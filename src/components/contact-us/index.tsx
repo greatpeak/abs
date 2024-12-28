@@ -13,75 +13,6 @@ import Toast, {
   notifyWarning,
 } from "../toastify/index";
 
-function AccordionItem({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  return (
-    <div className="flex space-x-2 mt-4">
-      <img
-        src={blueListMarker}
-        width={150}
-        height={100}
-        alt=""
-        className="w-[1.2rem] md:w-[1.7rem] self-start"
-      />
-      <div className="flex-grow">
-        <div
-          className="flex justify-between items-center cursor-pointer"
-          onClick={() => setIsExpanded((prev) => !prev)}
-        >
-          <p className="text-[0.9rem] md:text-[1.3rem] font-[500] leading-[1.5rem] text-[#3d3d3d]">
-            {title}
-          </p>
-          <img
-            src={greyExpand}
-            width={150}
-            height={100}
-            alt=""
-            className={`w-[0.9rem] md:w-[1.7rem] transition-transform ${
-              isExpanded ? "rotate-180" : ""
-            }`}
-          />
-        </div>
-        {isExpanded && (
-          <div className="mt-2">
-            <p className="text-[0.7rem] md:text-[1rem] text-[#646464] font-[500] leading-[1rem]">
-              {description}
-            </p>
-          </div>
-        )}
-        <div className="h-[1px] bg-[#f1f1f1] w-full mt-2"></div>
-      </div>
-    </div>
-  );
-}
-
-  const items = [
-    {
-      title: "Fragmented Processes:",
-      description:
-        "If your educational institution's processes for managing data, communication, or scheduling are inconsistent, we can help streamline them.",
-    },
-    {
-      title: "Inefficient Systems:",
-      description:
-        "Facing challenges with outdated systems? We can provide modern, scalable solutions.",
-    },
-    {
-      title: "Student Engagement:",
-      description:
-        "Struggling to keep students engaged? Explore our tools for enhanced interaction and participation.",
-    },
-  ];
-
-
-
 function ContactUs() {
   interface Formdata {
     title: string;
@@ -95,6 +26,12 @@ function ContactUs() {
     message: "",
   });
 
+  const [expandedSections, setExpandedSections] = useState<number | null>(null);
+
+  const toggleSection = (index: number) => {
+    setExpandedSections((prev) => (prev === index ? null : index));
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -105,6 +42,24 @@ function ContactUs() {
       [name]: value,
     }));
   };
+
+  const accordionData = [
+    {
+      title: "Fragmented Processes:",
+      content:
+        "If your educational institution's processes for managing academic and administrative tasks are fragmented or inefficient.",
+    },
+    {
+      title: "Communication Challenge:",
+      content:
+        "If your institution is struggling with manual processes that could benefit from automation to save time and resources.",
+    },
+    {
+      title: "Desire For Efficiency ",
+      content:
+        "If communication between faculty, students, and staff needs improvement for a smoother academic experience.",
+    },
+  ];
 
   return (
     <>
@@ -194,7 +149,7 @@ function ContactUs() {
 
             {/* contact form */}
             <form
-              className="rounded-[0.6rem] bg-white p-[1.5rem] mx-auto mt-[1.2rem] w-[80vw] md:w-[65vw] md:mt-[3rem] lg:w-[45vw]"
+              className="bg-white rounded-[0.6rem] p-[1.5rem] mx-auto mt-[1.2rem] w-[80vw] md:w-[65vw] md:mt-[3rem] lg:w-[45vw]"
               // onSubmit={(e) => handleSubmit(e)}
             >
               <input
@@ -220,11 +175,13 @@ function ContactUs() {
                 onChange={handleChange}
                 required
               />
-              <div className="justify-end flex"></div>
+                <button className="mt-[10px] right-0 w-full  bg-[#6E58FF] text-white rounded-lg md:rounded-xl px-2 md:px-[18px] py-1 md:py-2 text-sm md:text-[18px]">
+                  submit
+                </button>
             </form>
           </div>
 
-          <div className="flex flex-col md:gap-x-[2rem] gap-y-[2.5rem] w-full md:flex-row md:justify-between bg-white pt-[20rem] md:pt-[11rem] lg:pt-[4rem] px-[0.8rem] md:px-[3rem] pb-4">
+          <div className="flex flex-col md:gap-x-[2rem] gap-y-[2.5rem] w-full md:flex-row md:justify-between bg-white pt-[20rem] md:pt-[11rem] lg:pt-[4rem] px-[0.8rem] md:px-[3rem]">
             <div className="w-full md:w-[587px] ">
               <p className="text-[0.9rem] md:text-[2rem] font-[500] leading-[1.3rem] text-[#3d3d3d] md:leading-[2rem] ">
                 How do you know you need <br className="hidden md:block" />
@@ -239,15 +196,45 @@ function ContactUs() {
                 suggest it&apos;s time to contact us:
               </p>
             </div>
-<div className="md:w-[557px]">
-      {items.map((item, index) => (
-        <AccordionItem
-          key={index}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </div>
+
+            <div className="md:w-[557px]">
+              {accordionData.map((item, index) => (
+                <div key={index} className="flex flex-col mt-4">
+                  <div
+                    className="flex space-x-2 cursor-pointer"
+                    onClick={() => toggleSection(index)}
+                  >
+                    <img
+                      src={blueListMarker}
+                      width={150}
+                      height={100}
+                      alt=""
+                      className="w-[1.2rem] md:w-[1.7rem] self-start"
+                    />
+                    <div className="flex-1">
+                      <p className="text-[0.9rem] md:text-[1.3rem] font-[500] leading-[1.5rem] text-[#3d3d3d]">
+                        {item.title}
+                      </p>
+                    </div>
+                    <img
+                      src={greyExpand}
+                      width={150}
+                      height={100}
+                      alt=""
+                      className={`w-[0.9rem] md:w-[1.7rem] transform transition-transform ${
+                        expandedSections === index ? "rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                  {expandedSections === index && (
+                    <div className="mt-2 text-[0.7rem] md:text-[1rem] text-[#646464] font-[500] leading-[1.2rem] p-2 rounded">
+                      {item.content}
+                    </div>
+                  )}
+                  <div className="h-[1px] bg-[#f1f1f1] w-full mt-2"></div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <MobileBanner />
