@@ -1,10 +1,17 @@
 import "./styles.css";
 import smilingStudent from "../../assets/smiling-student.svg";
 import smilingStudentMobile from "../../assets/smiling-student-mobile.svg";
+import cardImage from "../../assets/cardImage.svg";
 import happyStudents from "../../assets/happy-uni-students.svg";
-import menhandshake from "../../assets/men-handshake.png";
+import menhandshake from "../../assets/men-handshake.svg";
 import polygon from "../../assets/polygon-marker.svg";
-// import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
+import Arrow from "../../assets/arrow.svg";
+import arrowLeft from "../../assets/arrowLeft.svg";
+import arrowRight from "../../assets/Caret-Right.svg";
+import person1 from "../../assets/Handsome_bearded_businessman_rubbing_hands__having_deal-removebg-preview 1.svg";
+import person2 from "../../assets/Cute_young_woman_posing_with_a_guitar_indoors-removebg-preview 1.svg";
+import customersImage from "../../assets/customersImage.svg";
+import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
 
 function AboutUs() {
   return (
@@ -88,76 +95,260 @@ function AboutUs() {
             </p>
           </div>
 
-          {/* <AboutUsSlide /> */}
+          <AboutUsSlide />
         </div>
 
         {/* Work with us section */}
         <div className="relative my-[2.8rem] md:flex md:flex-col-reverse lg:flex-row lg:justify-end items-center md:justify-between  md:px-[3rem] lg:px-[5.5rem]">
           <div className="lg:mt-0 shrink-0 px-[0.8rem] md:px-[3rem] lg:px-[5.5rem] py-8 work-with-us-bg rounded-[1rem] relative">
-            <div className="hidden lg:block absolute lg:top-[25%] xlg:top-[10%] right-[97%] shrink-0 lg:w-[85%] xlg:w-[35rem] md:mt-6 lg:mt-0">
+            <div className="hidden lg:block absolute lg:top-[-10%] xlg:top-[10%] right-[90%] shrink-0 lg:w-[85%] xlg:w-[35rem] md:mt-6 lg:mt-0">
               <img
                 src={menhandshake}
-                className="xlg:h-[27rem] w-full"
+                className="h-[633px] w-[726px]"
                 alt="Men shaking hands"
               />
             </div>
 
-            <div className="absolute right-[1.5rem] top-[-1.7rem] lg:top-[70%]  lg:left-[-3.5rem] rounded-[50%] bg-[#6e58ff] w-[5.2rem] md:w-[5.5rem] md:h-[5.5rem] lg:h-[7rem] lg:w-[7rem] shrink-0 text-center h-[5.2rem] text-white flex items-center justify-center">
+            <div className="absolute right-[1.5rem] top-[-1.7rem] lg:top-[70%]  lg:left-[-3.5rem] rounded-[50%] bg-[#6e58ff] w-[5.2rem] md:hidden shrink-0 text-center h-[5.2rem] text-white flex items-center justify-center">
               <p className="w-[4.7rem] text-[0.8rem] md:text-[0.9rem] lg:text-[1rem]">
                 Why work with us
               </p>
             </div>
-
             <div>
-              <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
-                <img
-                  src={polygon}
-                  className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
-                  alt="marker"
-                />
-                <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
-                  Academic Excellence
-                </h2>
+              <div>
+                <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
+                  <img
+                    src={polygon}
+                    className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
+                    alt="marker"
+                  />
+                  <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
+                    Academic Excellence
+                  </h2>
+                </div>
+                <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
+                  ABS provides a one-stop platform for students to access study
+                  materials, lecture notes, and assignment reminders.
+                </p>
               </div>
-              <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
-                ABS provides a one-stop platform for students to access study
-                materials, lecture notes, and assignment reminders.
-              </p>
+              <div className="mt-8">
+                <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
+                  <img
+                    src={polygon}
+                    className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
+                    alt="marker"
+                  />
+                  <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
+                    Campus Newsfeed
+                  </h2>
+                </div>
+                <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
+                  Receive the latest news and announcements from the university
+                  administration through the app&apos;s newsfeed, ensuring that
+                  students are well-informed about campus updates.
+                </p>
+              </div>
+              <div className="mt-8">
+                <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
+                  <img
+                    src={polygon}
+                    className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
+                    alt="marker"
+                  />
+                  <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
+                    Social Networking
+                  </h2>
+                </div>
+                <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
+                  The app includes a feature for students to connect with peers,
+                  join clubs and societies, and participate in extracurricular
+                  activities. It fosters a sense of community among students and
+                  encourages collaboration.
+                </p>
+              </div>
             </div>
-            <div className="mt-8">
-              <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
-                <img
-                  src={polygon}
-                  className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
-                  alt="marker"
-                />
-                <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
-                  Campus Newsfeed
-                </h2>
-              </div>
-              <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
-                Receive the latest news and announcements from the university
-                administration through the app&apos;s newsfeed, ensuring that
-                students are well-informed about campus updates.
-              </p>
+          </div>
+        </div>
+
+        {/* Our team */}
+        <div className="px-4 md:px-14  mb-10 overflow-x-hidden">
+          <div className="w-full flex justify-between px-4 md:px-14  mb-1 ">
+            <div className="flex self-end text-[12px] lg:text-[24px] font-bold text-[#6E58FF]">
+              Our team
             </div>
-            <div className="mt-8">
-              <div className="flex gap-x-[0.4rem] md:gap-x-[0.75rem] items-center">
-                <img
-                  src={polygon}
-                  className="w-[0.5rem] h-[0.5rem] md:w-[0.7rem] md:h-[0.7rem]"
-                  alt="marker"
-                />
-                <h2 className="text-[#3d3d3d] text-[0.9rem] md:text-[1.4rem] md:leading-[2rem] font-[700] tracking-wide leading-[1.5rem] ">
-                  Social Networking
-                </h2>
+            <div>
+              <div className="flex lg:gap-x-16 gap-x-10">
+                <h1 className="text-[16px] lg:text-[57px] font-bold">
+                  Designers
+                </h1>
+                <h1 className="text-[16px] lg:text-[57px] text-[#646464] font-bold ">
+                  Developers
+                </h1>
               </div>
-              <p className="mt-2 text-[#646464] text-[0.8rem] md:text-[1rem] md:leading-[1.5rem] font-[500] leading-[1.2rem] tracking-wide">
-                The app includes a feature for students to connect with peers,
-                join clubs and societies, and participate in extracurricular
-                activities. It fosters a sense of community among students and
-                encourages collaboration.
-              </p>
+            </div>
+          </div>
+
+          <div className="flex relative justify-between items-center md:gap-10 mt-4">
+            <div className="absolute gap-5 hidden md:flex right-6 top-[-10px]">
+              <button>
+                <img src={arrowLeft} alt="" />
+              </button>{" "}
+              <button>
+                <img src={arrowRight} alt="" />
+              </button>
+            </div>
+            <div className="bg-[#6E58FF] hidden md:block p-5 rounded-2xl">
+              <div className="h-[462px] w-[344px]">
+                <p className="mb-5 mt-2 text-[22px] text-white font-bold">
+                  Creative designers
+                </p>
+                <h2 className="text-[32px]  text-white font-bold">
+                  “Our design team helps to make sure the idea is intact while
+                  trying to design what would bring a good change to students of
+                  this age”{" "}
+                </h2>
+                <div className="flex justify-between">
+                  <div></div>{" "}
+                  <button>
+                    <img
+                      src={Arrow}
+                      alt="arrow"
+                      className="w-[48px] h-[48px]"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-evenly gap-5">
+              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
+                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
+                  Oluwatobiloba Akinleye
+                </h4>
+                <img
+                  src={person1}
+                  alt="person"
+                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
+                />
+                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
+                  <p className="text-white font-medium text-[11px] md:text-[16px]">
+                    UI/UX designer
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
+                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
+                  Maria Gonzalez{" "}
+                </h4>
+                <img
+                  src={person2}
+                  alt="person"
+                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
+                />
+                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
+                  <p className="text-white font-medium text-[11px] md:text-[16px]">
+                    UI/UX designer
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
+                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
+                  Oluwatobiloba Akinleye
+                </h4>
+                <img
+                  src={person2}
+                  alt="person"
+                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
+                />
+                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
+                  <p className="text-white font-medium text-[11px] md:text-[16px]">
+                    UI/UX designer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonies */}
+        <div className="px-4 md:px-14  mb-10 overflow-x-hidden">
+          <div className="flex flex-col justify-start text-left mb-7 ">
+            <img
+              src={customersImage}
+              alt="hello"
+              className="w-[80px] h-[56px]"
+            />
+            <h2 className="text-[22px] mt-4 mb-2 md:text-[33px] font-bold">
+              What are our Customers Saying??
+            </h2>
+            <p className="text-[16px] md:text-[19px] md:w-[675px] w-[358px] text-[#646464]">
+              Our Mission at Evolve is to help thousands of users get connected,
+              carry out daily activities involving calls very easily.
+            </p>
+          </div>
+
+          <div className="flex gap-10">
+            <div className="bg-[#FAFAFA] w-[358px] flex flex-col justify-center lg:w-[771px] md:h-[449px] h-[310px] relative rounded-xl">
+              <h1 className="font-medium text-[14px] lg:text-[32px] lg:w-[691px] w-[319px] text-[#161616] px-[16px]">
+                “I've been using ABS for a few months now and it's completely
+                transformed the way I send money to my family abroad. The
+                platform is so easy to use and transfers are always fast and
+                secure.{" "}
+              </h1>
+              <div className="bg-[#F8F8F8] absolute bottom-0 w-full rounded-b-xl">
+                <div className="flex gap-[12px] px-5 md:px-10 md:py-5 py-2">
+                  <img src={cardImage} alt="" />
+                  <div>
+                    <h3 className="text-[14px] md:text-[19px] font-medium">
+                      Carl Rowan
+                    </h3>
+                    <p className="text-[12px] md:text-[16px] font-medium">
+                      Aglets Inc
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#FAFAFA] w-[358px] flex flex-col justify-center lg:w-[771px] md:h-[449px] h-[310px] relative rounded-xl">
+              <h1 className="font-medium text-[14px] lg:text-[32px] lg:w-[691px] w-[319px] text-[#161616] px-[16px]">
+                “I've been using ABS for a few months now and it's completely
+                transformed the way I send money to my family abroad. The
+                platform is so easy to use and transfers are always fast and
+                secure.{" "}
+              </h1>
+              <div className="bg-[#F8F8F8] absolute bottom-0 w-full rounded-b-xl">
+                <div className="flex gap-[12px] px-5 md:px-10 md:py-5 py-2">
+                  <img src={cardImage} alt="" />
+                  <div>
+                    <h3 className="text-[14px] md:text-[19px] font-medium">
+                      Carl Rowan
+                    </h3>
+                    <p className="text-[12px] md:text-[16px] font-medium">
+                      Aglets Inc
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#FAFAFA] w-[358px] flex flex-col justify-center lg:w-[771px] md:h-[449px] h-[310px] relative rounded-xl">
+              <h1 className="font-medium text-[14px] lg:text-[32px] lg:w-[691px] w-[319px] text-[#161616] px-[16px]">
+                “I've been using ABS for a few months now and it's completely
+                transformed the way I send money to my family abroad. The
+                platform is so easy to use and transfers are always fast and
+                secure.{" "}
+              </h1>
+              <div className="bg-[#F8F8F8] absolute bottom-0 w-full rounded-b-xl">
+                <div className="flex gap-[12px] px-5 md:px-10 md:py-5 py-2">
+                  <img src={cardImage} alt="" />
+                  <div>
+                    <h3 className="text-[14px] md:text-[19px] font-medium">
+                      Carl Rowan
+                    </h3>
+                    <p className="text-[12px] md:text-[16px] font-medium">
+                      Aglets Inc
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
