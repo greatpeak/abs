@@ -11,9 +11,16 @@ import arrowRight from "../../assets/Caret-Right.svg";
 import person1 from "../../assets/Handsome_bearded_businessman_rubbing_hands__having_deal-removebg-preview 1.svg";
 import person2 from "../../assets/Cute_young_woman_posing_with_a_guitar_indoors-removebg-preview 1.svg";
 import customersImage from "../../assets/customersImage.svg";
-import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
+// import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
 
 function AboutUs() {
+  const teamMembers = [
+    { name: "Oluwatobiloba Akinleye", image: person1, role: "Web Developer" },
+    { name: "Maria Gonzalez", image: person2, role: "UI/UX designer" },
+    { name: "Oluwatobiloba Akinleye", image: person1, role: "UI/UX designer" },
+    { name: "Oluwatobiloba Akinleye", image: person1, role: "UI/UX designer" },
+  ];
+
   return (
     <div>
       {/* Header */}
@@ -95,7 +102,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <AboutUsSlide />
+          {/* <AboutUsSlide /> */}
         </div>
 
         {/* Work with us section */}
@@ -220,51 +227,28 @@ function AboutUs() {
               </div>
             </div>
             <div className="flex justify-evenly gap-5">
-              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
-                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
-                  Oluwatobiloba Akinleye
-                </h4>
-                <img
-                  src={person1}
-                  alt="person"
-                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
-                />
-                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
-                  <p className="text-white font-medium text-[11px] md:text-[16px]">
-                    UI/UX designer
-                  </p>
-                </div>
-              </div>
-              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
-                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
-                  Maria Gonzalez{" "}
-                </h4>
-                <img
-                  src={person2}
-                  alt="person"
-                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
-                />
-                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
-                  <p className="text-white font-medium text-[11px] md:text-[16px]">
-                    UI/UX designer
-                  </p>
-                </div>
-              </div>
-              <div className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
-                <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
-                  Oluwatobiloba Akinleye
-                </h4>
-                <img
-                  src={person2}
-                  alt="person"
-                  className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
-                />
-                <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
-                  <p className="text-white font-medium text-[11px] md:text-[16px]">
-                    UI/UX designer
-                  </p>
-                </div>
-              </div>
+              {teamMembers.map(
+                (
+                  person: { name: string; image: string; role: string },
+                  index: number
+                ) => (
+                  <div key={index} className="bg-[#F2F2F2] relative w-[195px] md:w-[366px] h-[222px] md:h-[430px] px-4 md:pt-6 rounded-2xl">
+                    <h4 className="text-sm md:text-[20px] text-[#3D3D3D] font-bold mt-4">
+                      {person.name}
+                    </h4>
+                    <img
+                      src={person.image}
+                      alt="person"
+                      className="absolute bottom-0 w-[141px] h-[163px] md:w-[296px] md:h-[336px]"
+                    />
+                    <div className="bg-[#6E58FF] px-[12px] py-[4px] w-[108px] md:w-[139px] absolute bottom-6 right-3 rounded-xl">
+                      <p className="text-white font-medium text-[11px] md:text-[16px]">
+                        {person.role}
+                      </p>
+                    </div>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
