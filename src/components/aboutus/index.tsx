@@ -11,7 +11,7 @@ import arrowRight from "../../assets/Caret-Right.svg";
 import person1 from "../../assets/Handsome_bearded_businessman_rubbing_hands__having_deal-removebg-preview 1.svg";
 import person2 from "../../assets/Cute_young_woman_posing_with_a_guitar_indoors-removebg-preview 1.svg";
 import customersImage from "../../assets/customersImage.svg";
-import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
+// import AboutUsSlide from "@/components/slick-slider/AboutUsSlide";
 
 function AboutUs() {
   const teamMembers = [
