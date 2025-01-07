@@ -1,4 +1,6 @@
 import downArrow from "../../assets/downArrow.svg";
+import schoolLogo from "../../assets/schoolLogo.svg";
+import SchoolChrome from "../../assets/bi_browser-chrome.svg";
 function Scholarship() {
   return (
     <div className="md:py-[60px] md:px-[90px]">
@@ -24,10 +26,55 @@ function Scholarship() {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly md:gap-[34px]">
+      <div className="flex justify-between md:gap-[34px]">
+        {/* right */}
         <div></div>
+        {/* middle */}
         <div className="bg-[#F2F2F2] h-[569px] w-[2px]"></div>
-        <div><div className="py-[12px] px-[16px]"></div></div>
+        <div>
+          {/* left */}
+          <div className="py-[12px] px-[16px]">
+            <div>
+              <div className="relative mb-3">
+                <img
+                  src={schoolLogo}
+                  alt=""
+                  className=" object-cover w-[274px] h-[130px]"
+                />
+                <div className="absolute py-2 px-3 bg-[#6E58FF] rounded-xl bottom-2 right-2">
+                  <div className="flex gap-2">
+                    <img src={SchoolChrome} alt="" />{" "}
+                    <p className="underline text-white">Harvard.com</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="text-left flex flex-col justify-start items-start
+              "
+              >
+                <div className="flex gap-2">
+                  {" "}
+                  <img src="#" alt="" />
+                  <div>
+                    <div className="flex gap-[6px]">
+                      <h6 className="text-[14px] font-medium">
+                        ABS opportunities
+                      </h6>
+                      <p className="text-[12px] font-medium text-[#8A8A8A]">
+                        4h
+                      </p>
+                    </div>
+                    <div className="py-[2px] rounded-xl px-[6px] bg-[#F6F5FF]">
+                      <p className="text-[12px] font-medium text-[#6E58FF]">
+                        Scholarship
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
