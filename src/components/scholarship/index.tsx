@@ -1,6 +1,8 @@
 import downArrow from "../../assets/downArrow.svg";
 import schoolLogo from "../../assets/schoolLogo.svg";
 import SchoolChrome from "../../assets/bi_browser-chrome.svg";
+import Logo from "../../assets/logo.svg";
+import UniPicture from "../../assets/uni.svg";
 function Scholarship() {
   return (
     <div className="md:py-[60px] md:px-[90px]">
@@ -26,50 +28,137 @@ function Scholarship() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between md:gap-[34px]">
+      <div className="flex md:gap-[34px]">
         {/* right */}
-        <div></div>
+        <div className="flex gap-[32px]">
+          <div className="p-[16px] ">
+            <div className="">
+              <img src={UniPicture} alt="" />
+              <h1 className="text-[22px] font-bold w-[440px] mt-3">
+                Scholarship opportunity for undergraduate in University of
+                Cyprus.
+              </h1>
+            </div>
+            <div className="">
+              <div className="flex gap-3">
+                <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                  <img src={Logo} alt="" />
+                </div>{" "}
+                <h1 className="text-[16px] font-medium">ABS opportunities</h1>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
         {/* middle */}
         <div className="bg-[#F2F2F2] h-[569px] w-[2px]"></div>
         <div>
           {/* left */}
-          <div className="py-[12px] px-[16px]">
-            <div>
-              <div className="relative mb-3">
-                <img
-                  src={schoolLogo}
-                  alt=""
-                  className=" object-cover w-[274px] h-[130px]"
-                />
-                <div className="absolute py-2 px-3 bg-[#6E58FF] rounded-xl bottom-2 right-2">
-                  <div className="flex gap-2">
-                    <img src={SchoolChrome} alt="" />{" "}
-                    <p className="underline text-white">Harvard.com</p>
+          <div>
+            <div className="py-[12px] px-[16px]">
+              <div>
+                <div className="relative mb-3">
+                  <img
+                    src={schoolLogo}
+                    alt=""
+                    className=" object-cover w-[274px] h-[130px]"
+                  />
+                  <div className="absolute py-2 px-3 bg-[#6E58FF] rounded-xl bottom-2 right-2">
+                    <div className="flex gap-2">
+                      <img src={SchoolChrome} alt="" />{" "}
+                      <p className="underline text-white">Harvard.com</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className="text-left flex flex-col justify-start items-start
+                <div
+                  className="text-left flex flex-col justify-start items-start 
               "
-              >
-                <div className="flex gap-2">
-                  {" "}
-                  <img src="#" alt="" />
-                  <div>
-                    <div className="flex gap-[6px]">
-                      <h6 className="text-[14px] font-medium">
-                        ABS opportunities
-                      </h6>
-                      <p className="text-[12px] font-medium text-[#8A8A8A]">
-                        4h
-                      </p>
+                >
+                  <div className="flex gap-2 justify-center items-center place-content-center">
+                    {" "}
+                    <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                      <img src={Logo} alt="" />
                     </div>
-                    <div className="py-[2px] rounded-xl px-[6px] bg-[#F6F5FF]">
-                      <p className="text-[12px] font-medium text-[#6E58FF]">
-                        Scholarship
-                      </p>
+                    <div>
+                      <div className="flex gap-[6px]">
+                        <h6 className="text-[14px] font-medium">
+                          ABS opportunities
+                        </h6>
+                        <p className="text-[12px] font-medium text-[#8A8A8A]">
+                          4h
+                        </p>
+                      </div>
+                      <div className="py-[2px] rounded-lg px-[6px] bg-[#F6F5FF]">
+                        <p className="text-[12px] font-medium text-[#6E58FF]">
+                          Scholarship
+                        </p>
+                      </div>
                     </div>
                   </div>
+                </div>
+                <div>
+                  <h1 className="text-[14px] font-bold w-[274px] mt-4">
+                    Scholarship opportunity for undergraduate in ...
+                  </h1>
+                  <p className="text-[11px] mt-2 font-medium w-[274px]">
+                    The RTF Scholarships is specifically designed to pay for
+                    tuition fees, help with living costs, and provide other
+                    allowances that covers travel...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="py-[12px] px-[16px]">
+              <div>
+                <div className="relative mb-3">
+                  <img
+                    src={schoolLogo}
+                    alt=""
+                    className=" object-cover w-[274px] h-[130px]"
+                  />
+                  <div className="absolute py-2 px-3 bg-[#6E58FF] rounded-xl bottom-2 right-2">
+                    <div className="flex gap-2">
+                      <img src={SchoolChrome} alt="" />{" "}
+                      <p className="underline text-white">Harvard.com</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="text-left flex flex-col justify-start items-start 
+              "
+                >
+                  <div className="flex gap-2 justify-center items-center place-content-center">
+                    {" "}
+                    <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                      <img src={Logo} alt="" />
+                    </div>
+                    <div>
+                      <div className="flex gap-[6px]">
+                        <h6 className="text-[14px] font-medium">
+                          ABS opportunities
+                        </h6>
+                        <p className="text-[12px] font-medium text-[#8A8A8A]">
+                          4h
+                        </p>
+                      </div>
+                      <div className="py-[2px] rounded-lg px-[6px] bg-[#F6F5FF]">
+                        <p className="text-[12px] font-medium text-[#6E58FF]">
+                          Scholarship
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h1 className="text-[14px] font-bold w-[274px] mt-4">
+                    Scholarship opportunity for undergraduate in ...
+                  </h1>
+                  <p className="text-[11px] mt-2 font-medium w-[274px]">
+                    The RTF Scholarships is specifically designed to pay for
+                    tuition fees, help with living costs, and provide other
+                    allowances that covers travel...
+                  </p>
                 </div>
               </div>
             </div>
