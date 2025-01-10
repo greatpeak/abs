@@ -2,6 +2,7 @@ import downArrow from "../../assets/downArrow.svg";
 import schoolLogo from "../../assets/schoolLogo.svg";
 import SchoolChrome from "../../assets/bi_browser-chrome.svg";
 import Logo from "../../assets/logo.svg";
+import HarvardLogo from "../../assets/harvardLogo.svg";
 import UniPicture from "../../assets/uni.svg";
 function Scholarship() {
   return (
@@ -40,16 +41,146 @@ function Scholarship() {
               </h1>
             </div>
             <div className="">
-              <div className="flex gap-3">
+              <div className="flex gap-3 mt-2">
                 <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
                   <img src={Logo} alt="" />
                 </div>{" "}
                 <h1 className="text-[16px] font-medium">ABS opportunities</h1>
+                <div className="rounded-lg px-[6px] bg-[#F6F5FF]">
+                  <p className="text-[12px] font-medium text-[#6E58FF]">
+                    Scholarship
+                  </p>
+                </div>
+                <p className="text-[12px] font-medium text-[#8A8A8A]">4h</p>
               </div>
-              <div></div>
+              <div>
+                <p className="text-[12px] mt-3 font-medium text-[#3D3D3D] w-[440px]">
+                  The RTF Scholarships is specifically designed to pay for
+                  tuition fees, help with living costs, and provide other
+                  allowances that covers travel, thesis or research.
+                </p>
+              </div>
             </div>
           </div>
-          <div></div>
+          <div>
+            {/* card 1 */}
+            <div className="flex gap-[17px]">
+              <div className="w-[101px] h-[100px]">
+                <img src={HarvardLogo} alt="" />
+              </div>
+              <div className=" flex flex-col">
+                <div>
+                  <h1 className="text-[14px] mb-[8px] font-bold w-[200px]">
+                    Scholarship opportunity for undergraduate in ...
+                  </h1>
+                  <div className="flex gap-2 justify-start items-center place-content-center">
+                    {" "}
+                    <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                      <img src={Logo} alt="" />
+                    </div>
+                    <div>
+                      <div className="flex gap-[6px]">
+                        <h6 className="text-[14px] font-medium">
+                          ABS opportunities
+                        </h6>
+                        <p className="text-[12px] font-medium text-[#8A8A8A]">
+                          4h
+                        </p>
+                      </div>
+                      <div className="py-[2px] rounded-lg px-[6px] bg-[#F6F5FF]">
+                        <p className="text-[12px] font-medium text-[#6E58FF]">
+                          Skill acquisition{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p className="w-[257px] text-[12px] text-[#3D3D3D] mt-4 font-medium">
+                  The RTF Scholarships is specifically designed to pay for
+                  tuition fees, help with living costs, and provide other
+                  allowances that covers travel, thesis or research.
+                </p>
+              </div>
+            </div>
+            {/* card 1 */}
+            <div className="flex gap-[17px]">
+              <div className="w-[101px] h-[100px]">
+                <img src={HarvardLogo} alt="" />
+              </div>
+              <div className=" flex flex-col">
+                <div>
+                  <h1 className="text-[14px] mb-[8px] font-bold w-[200px]">
+                    Scholarship opportunity for undergraduate in ...
+                  </h1>
+                  <div className="flex gap-2 justify-start items-center place-content-center">
+                    {" "}
+                    <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                      <img src={Logo} alt="" />
+                    </div>
+                    <div>
+                      <div className="flex gap-[6px]">
+                        <h6 className="text-[14px] font-medium">
+                          ABS opportunities
+                        </h6>
+                        <p className="text-[12px] font-medium text-[#8A8A8A]">
+                          4h
+                        </p>
+                      </div>
+                      <div className="py-[2px] rounded-lg px-[6px] bg-[#F6F5FF]">
+                        <p className="text-[12px] font-medium text-[#6E58FF]">
+                          Skill acquisition{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p className="w-[257px] text-[12px] text-[#3D3D3D] mt-4 font-medium">
+                  The RTF Scholarships is specifically designed to pay for
+                  tuition fees, help with living costs, and provide other
+                  allowances that covers travel, thesis or research.
+                </p>
+              </div>
+            </div>
+            {/* card 1 */}
+            <div className="flex gap-[17px]">
+              <div className="w-[101px] h-[100px]">
+                <img src={HarvardLogo} alt="" />
+              </div>
+              <div className=" flex flex-col">
+                <div>
+                  <h1 className="text-[14px] mb-[8px] font-bold w-[200px]">
+                    Scholarship opportunity for undergraduate in ...
+                  </h1>
+                  <div className="flex gap-2 justify-start items-center place-content-center">
+                    {" "}
+                    <div className="bg-[#F2F2F2] mb-3 flex px-[6.46px] rounded-[100%] justify-center items-center py-[11.22px]">
+                      <img src={Logo} alt="" />
+                    </div>
+                    <div>
+                      <div className="flex gap-[6px]">
+                        <h6 className="text-[14px] font-medium">
+                          ABS opportunities
+                        </h6>
+                        <p className="text-[12px] font-medium text-[#8A8A8A]">
+                          4h
+                        </p>
+                      </div>
+                      <div className="py-[2px] rounded-lg px-[6px] bg-[#F6F5FF]">
+                        <p className="text-[12px] font-medium text-[#6E58FF]">
+                          Skill acquisition{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p className="w-[257px] text-[12px] text-[#3D3D3D] mt-4 font-medium">
+                  The RTF Scholarships is specifically designed to pay for
+                  tuition fees, help with living costs, and provide other
+                  allowances that covers travel, thesis or research.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         {/* middle */}
         <div className="bg-[#F2F2F2] h-[569px] w-[2px]"></div>
