@@ -7,7 +7,7 @@ function Scholarship() {
   return (
     <div className="md:w-[881px] w-[362px] mx-auto">
       <article>
-        <img src={image} alt="" className="w-full" />
+        <img src={image} className="w-full" />
       </article>
       <article className="mt-[36px]">
         <div className="flex justify-between">
