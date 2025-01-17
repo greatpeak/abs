@@ -4,6 +4,7 @@ import solidClick from "../../assets/icon-park-solid_click.svg";
 import chrome from "../../assets/bi_browser-chrome.svg";
 import shareLink from "../../assets/shareLink.svg";
 function Scholarship() {
+  // scholarshiip
   return (
     <div className="md:w-[881px] w-[362px] mx-auto">
       <article>
